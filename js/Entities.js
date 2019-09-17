@@ -1,3 +1,5 @@
+// let h1 = document.getElementsByTagName('h1')[0];
+
 class Entity extends Phaser.GameObjects.Sprite {
 	constructor(scene, x, y, key, type) {
 		super(scene, x, y, key);
@@ -68,8 +70,9 @@ class Player extends Entity {
 
 	onDestroy() {
 		this.scene.time.addEvent({
-			delay: 1000,
+			delay: 200,
 			callback: function() {
+				clearTimeout(t);
 				console.log('you are ded');
 				this.scene.scene.start('SceneGameOver');
 			},
