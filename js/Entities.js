@@ -70,6 +70,7 @@ class Player extends Entity {
 		this.scene.time.addEvent({
 			delay: 1000,
 			callback: function() {
+				console.log('you are ded');
 				this.scene.scene.start('SceneGameOver');
 			},
 			callbackScope: this,

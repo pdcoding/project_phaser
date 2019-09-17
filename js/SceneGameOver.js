@@ -42,6 +42,7 @@ class SceneGameOver extends Phaser.Scene {
 		this.btnRestart.on(
 			'pointerdown',
 			function() {
+				console.log('clicked restart');
 				this.btnRestart.setTexture('sprBtnRestartDown');
 				this.sfx.btnDown.play();
 			},
