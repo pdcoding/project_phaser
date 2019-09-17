@@ -1,4 +1,27 @@
-// let h1 = document.getElementsByTagName('h1')[0];
+// make modal with input field for playerName, and a button to submit
+// submit button will call a function that sends ajax post request to /players
+
+const inputModal = $('#inputModal');
+const inputBtn = $('#inputBtn');
+const inputSpan = $('.inputClose');
+
+const popupModal = () => {
+	// alert('You are ded');
+	inputModal.css('display', 'block');
+};
+
+inputSpan.on('click', event => {
+	inputModal.css('display', 'none');
+});
+
+// const formData = {
+// 	player: {
+// 		name: fromInput,
+// 		time: fromH1.val
+// 	}
+// };
+
+// $.ajax('url', formData);
 
 class Entity extends Phaser.GameObjects.Sprite {
 	constructor(scene, x, y, key, type) {
@@ -73,6 +96,7 @@ class Player extends Entity {
 			delay: 200,
 			callback: function() {
 				clearTimeout(t);
+				popupModal();
 				console.log('you are ded');
 				this.scene.scene.start('SceneGameOver');
 			},
