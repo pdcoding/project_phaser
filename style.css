@@ -30,3 +30,10 @@
 	padding-bottom: 5px;
 	background-image: linear-gradient(to right, #00c9f9cc, #fb0101cc);
 }
+
+.scores {
+	float: right;
+	padding: 20px;
+	width: 200px;
+	/* font-size: 0.5em; */
+}

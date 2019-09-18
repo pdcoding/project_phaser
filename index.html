@@ -19,14 +19,16 @@
 		<script src="./js/phaser.js"></script>
 	</head>
 	<body>
-		<div class="hideButtons">
-			<!-- <button id="start">start</button> -->
-			<button id="stop">stop</button>
-			<button id="clear">clear</button>
-		</div>
-		<h1><time id="playerTime">00:00:00</time></h1>
-		<div class="scoreboard">
-			<h1>Scoreboard:</h1>
+		<div class="scores">
+			<div class="hideButtons">
+				<!-- <button id="start">start</button> -->
+				<button id="stop">stop</button>
+				<button id="clear">clear</button>
+			</div>
+			<h1><time id="playerTime">00:00:00</time></h1>
+			<div class="scoreboard">
+				<h3>Scoreboard:</h3>
+			</div>
 		</div>
 
 		<!-- Modal -->
@@ -39,23 +41,24 @@
 				</button>
 			</p>
 		</div>
-
-		<script
-			src="https://code.jquery.com/jquery-3.4.1.min.js"
-			integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-			crossorigin="anonymous"
-		></script>
-		<script src="./js/Entities.js"></script>
-		<script src="./js/SceneMainMenu.js"></script>
-		<script src="./js/SceneMain.js"></script>
-		<script src="./js/SceneGameOver.js"></script>
-		<script src="./js/game.js"></script>
-		<script src="./js/api_service.js"></script>
-		<script>
-			function pageReload() {
-				location.reload();
-			}
-		</script>
+		<div class="game">
+			<script
+				src="https://code.jquery.com/jquery-3.4.1.min.js"
+				integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+				crossorigin="anonymous"
+			></script>
+			<script src="./js/Entities.js"></script>
+			<script src="./js/SceneMainMenu.js"></script>
+			<script src="./js/SceneMain.js"></script>
+			<script src="./js/SceneGameOver.js"></script>
+			<script src="./js/game.js"></script>
+			<script src="./js/api_service.js"></script>
+			<script>
+				function pageReload() {
+					location.reload();
+				}
+			</script>
+		</div>
 		<!-- <script src="/project_phaser/js/stopwatch.js"></script> -->
 	</body>
 </html>
