@@ -34,7 +34,7 @@
 			<p>
 				You are dead. Add your name to the list of Fallen:\
 				<input type="text" id="newPlayerInput" />
-				<button id="newPlayerBtn">
+				<button id="newPlayerBtn" onclick="pageReload()">
 					Submit
 				</button>
 			</p>
@@ -51,6 +51,11 @@
 		<script src="./js/SceneGameOver.js"></script>
 		<script src="./js/game.js"></script>
 		<script src="./js/api_service.js"></script>
+		<script>
+			function pageReload() {
+				location.reload();
+			}
+		</script>
 		<!-- <script src="/project_phaser/js/stopwatch.js"></script> -->
 	</body>
 </html>

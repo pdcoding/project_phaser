@@ -21,7 +21,7 @@ $(async () => {
 		const formData = {
 			player: {
 				name: $playerInput.val(),
-				time: 0,
+				// time: 0,
 				scoreboard_id: 1
 			}
 		};
